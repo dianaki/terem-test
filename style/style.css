@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+h1 {
+    margin: 0;
+}
+
 html,
 body {
     font-family: Montserrat;
@@ -45,6 +49,7 @@ header {
 }
 
 .header__buttons {
+    padding-top: 14px;
     display: flex;
     align-items: center;
 }
@@ -61,7 +66,7 @@ header {
 .button--white {
     color: #930338;
     background-color: white;
-    margin-right: 18px;
+    margin-right: 22px;
 }
 
 .button--white:hover {
@@ -79,6 +84,10 @@ header {
     background-color: white;
 }
 
+.maincontent {
+    margin-bottom: 125px;
+}
+
 .info__container {
     display: flex;
     justify-content: space-between;
@@ -88,7 +97,7 @@ header {
 .block {
     background-color: #F6F6F6;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
     position: relative;
     display: flex;
 }
@@ -100,9 +109,11 @@ header {
 }
 
 .block__title {
-    padding: 9.1% 16%;
+    padding: 11% 17% 9%;
     display: flex;
     align-items: flex-end;
+    letter-spacing: 2px;
+    line-height: 1.2;
 }
 
 .title {
@@ -114,7 +125,7 @@ header {
 
 .block__home {
     position: absolute;
-    bottom: 30px;
+    bottom: 23px;
     right: 30px;
 }
 
@@ -138,6 +149,7 @@ header {
 
 .desc__text {
     color: #000000;
+    line-height: 1.3;
 }
 
 .desc__text--white {
@@ -153,6 +165,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10.6% 8% 8% 9%;
 }
 
 .block__button {
@@ -183,7 +196,6 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top: 140px;
     width: 100%;
     background-color: white;
 }
