@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: Montserrat;
+    font-size: 21px;
+    height: 100%;
+    color: #121212;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    padding: 140px 0;
+    position: relative;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 8.8%;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header__button {
+    font-family: IBM Plex Sans;
+    font-weight: 500;
+    border-color: #930338;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: 12px;
+}
+
+.button--white {
+    color: #930338;
+    background-color: white;
+    margin-right: 18px;
+}
+
+.button--white:hover {
+    color: #FFFFFF;
+    background-color: #930338;
+}
+
+.button--red {
+    color: white;
+    background-color: #930338;
+}
+
+.button--red:hover {
+    color: #930338;
+    background-color: white;
+}
+
+.info__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block {
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+}
+
+.block__text {
+    max-width: 420px;
+    height: 420px;
+    flex: auto;
+}
+
+.block__title {
+    padding: 9.1% 16%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.title {
+    color: #121212;
+    font-weight: 600;
+    font-size: 80px;
+    text-align: center;
+}
+
+.block__home {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.block__home--top {
+    position: static;
+}
+
+.block__banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 870px;
+    height: 420px;
+}
+
+.banner__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.desc__text {
+    color: #000000;
+}
+
+.desc__text--white {
+    color: #FFFFFF;
+}
+
+.block__desc {
+    padding: 9.6%;
+}
+
+.block__desc--top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block__button {
+    display: flex;
+}
+
+.block--red {
+    background-color: #930338;
+}
+
+.block__link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block__catalog {
+    color: #121212;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+}
+
+.block__catalog:hover {
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 140px;
+    width: 100%;
+    background-color: white;
+}
+
+.footer__content {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}

@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Тест</title>
+    <meta name="description" content="lorem ipsum">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Montserrat:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/normalise.css">
     <link rel="stylesheet" href="style/style.css">
+    <title>Тест</title>
 </head>
 
 <body>
@@ -18,8 +24,8 @@
                         <img src="image/Logo.svg" alt="Логотип" class="logo__img">
                     </a>
                     <div class="header__buttons">
-                        <button class="button">Кнопка 1</button>
-                        <button class="button">Кнопка 2</button>
+                        <button class="header__button button--white">КНОПКА 1</button>
+                        <button class="header__button button--red">КНОПКА 2</button>
                     </div>
                 </div>
             </div>
@@ -27,8 +33,8 @@
         <main class="maincontent">
             <div class="container">
                 <div class="info__container">
-                    <div class="block">
-                        <h1 class="block__title">Добро пожаловать в Теремъ</h1>
+                    <div class="block block__title">
+                        <h1 class="title">Добро пожаловать в Теремъ</h1>
                         <a href="/" target="_blank" class="block__home">
                             <img src="image/house.svg" alt="Домой" class="home__img">
                         </a>
@@ -38,16 +44,19 @@
                             <img src="image/banner.jpg" alt="" class="banner__img">
                         </div>
                     </div>
-                    <div class="block">
+                    <div class="block block__text">
                         <div class="block__desc">
                             <p class="desc__text">
                                 Одноэтажные коттеджи серии «Добрыня» солидные, комфортные, с удобными планировками.
                                 Идеальный вариант как для семей с детьми, так и для пожилых людей: отсутствие второго
                                 этажа и лестницы делает его удобным и безопасным.
                             </p>
+                            <a href="/" target="_blank" class="block__home">
+                                <img src="image/house.svg" alt="Домой" class="home__img">
+                            </a>
                         </div>
                     </div>
-                    <div class="block">
+                    <div class="block block__text">
                         <div class="block__desc">
                             <p class="desc__text">
                                 Коллекция домов премиум-класса от «Теремъ» – масштабные загородные дома, обеспечивающие
@@ -59,24 +68,32 @@
                             </a>
                         </div>
                     </div>
-                    <div class="block">
-                        <div class="block__button">
-                            <a href="/" target="_blank" class="block__home">
-                                <img src="image/house.svg" alt="Домой" class="home__img">
-                            </a>
-                        </div>
-                        <div class="block__link">
-                            <a href="/" class="block__catalog">Смотреть каталог</a>
+                    <div class="block block__text">
+                        <div class="block__desc block__desc--top">
+                            <div class="block__button">
+                                <a href="/" target="_blank" class="block__home block__home--top">
+                                    <img src="image/house-circle.svg" alt="Домой" class="home__img">
+                                </a>
+                            </div>
+                            <div class="block__link">
+                                <a href="/" class="block__catalog">Смотреть каталог</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="block">
+                    <div class="block block__text block--red ">
                         <div class="block__desc">
-                            <p class="desc__text">
+                            <p class="desc__text desc__text--white">
                                 Легкие, небольшие, классические дачные дома. Строятся из бруса и по каркасной
                                 технологии. По вашему желанию они могут быть адаптированы и для зимнего проживания.
                             </p>
                             <a href="/" target="_blank" class="block__home">
-                                <img src="image/house.svg" alt="Домой" class="home__img">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="white"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M39.9895 19.957C39.9895 21.363 38.9476 22.4644 37.7667 22.4644H35.5439L35.5925 34.9775C35.5925 35.1884 35.5786 35.3993 35.5578 35.6102V36.8756C35.5578 38.6018 34.3144 40 32.7793 40H31.6679C31.5915 40 31.5151 40 31.4387 39.9922C31.3414 40 31.2442 40 31.1469 40L28.8894 39.9922H27.2223C25.6872 39.9922 24.4438 38.594 24.4438 36.8678V34.9932V29.9941C24.4438 28.6116 23.4505 27.4946 22.221 27.4946H17.7754C16.5459 27.4946 15.5526 28.6116 15.5526 29.9941V34.9932V36.8678C15.5526 38.594 14.3093 39.9922 12.7741 39.9922H11.107H8.89119C8.78699 39.9922 8.6828 39.9844 8.57861 39.9766C8.49525 39.9844 8.4119 39.9922 8.32854 39.9922H7.21714C5.68202 39.9922 4.43865 38.594 4.43865 36.8678V28.1195C4.43865 28.0492 4.43865 27.9711 4.44559 27.9008V22.4566H2.2228C0.972474 22.4566 0 21.363 0 19.9492C0 19.2462 0.208387 18.6214 0.694624 18.0746L18.4978 0.624878C18.9841 0.0781097 19.5398 0 20.026 0C20.5122 0 21.0679 0.15622 21.4847 0.546768L39.2254 18.0824C39.7811 18.6292 40.059 19.2541 39.9895 19.957Z"
+                                        fill="white" />
+                                </svg>
+
                             </a>
                         </div>
                     </div>
